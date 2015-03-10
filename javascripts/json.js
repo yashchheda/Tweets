@@ -1,7 +1,7 @@
 var main = function () {
     "use strict";
 
-$("#driver").click(function(event){
+$("#driver").click(function(){
 	console.log("clicked");
 	var username=$("#username").val();
 	//var search=$("#search").val();
@@ -13,7 +13,6 @@ $("#driver").click(function(event){
 			console.log(data);
 			$.each(data, function(key, value){
 				//console.log(key + "" +value.text);
-				
             $(".photos").append(value.text + "<br/>");
         });
 		}
